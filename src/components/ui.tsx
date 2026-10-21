@@ -90,6 +90,7 @@ export function Btn({
   title,
   onClick,
   type,
+  download,
 }: {
   href?: string;
   children: ReactNode;
@@ -99,6 +100,7 @@ export function Btn({
   title?: string;
   onClick?: () => void;
   type?: "button" | "submit";
+  download?: boolean | string;
 }) {
   const base =
     "inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2";
@@ -121,6 +123,7 @@ export function Btn({
         title={title}
         target={external ? "_blank" : undefined}
         rel={external ? "noreferrer" : undefined}
+        download={download}
       >
         {children}
       </a>

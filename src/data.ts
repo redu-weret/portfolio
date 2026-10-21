@@ -27,7 +27,7 @@ export const heroIntro =
 export const links = {
   github: "https://github.com/redu-weret",
   linkedin: "https://www.linkedin.com/in/rediet-weret-b92620331",
-  cv: "", // TODO-YOU: drop your CV into /public and set "/cv.pdf"
+  cv: "/portfolio/cv.pdf", // served from public/cv.pdf — rebuilt + redeployed when it changes
   email: "mailto:weretrediet@gmail.com",
 };
 

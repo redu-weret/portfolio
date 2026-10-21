@@ -71,7 +71,7 @@ export function Hero() {
               </Btn>
             )}
             {hasCV && (
-              <Btn href={links.cv} variant="ghost" dark title="Add in src/data.ts (links.cv) e.g. /cv.pdf">
+              <Btn href={links.cv} variant="ghost" dark download title="CV">
                 <FileDown size={16} /> Download CV
               </Btn>
             )}
